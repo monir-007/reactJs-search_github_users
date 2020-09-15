@@ -1,6 +1,7 @@
 ## Demo Version
 
 [Project Demo](https://search-github-users-demo.netlify.app/)
+
 -Login with Google or Twitter
 
 ## NPM Dependencies
@@ -35,4 +36,3 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
-

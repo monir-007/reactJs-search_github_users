@@ -49,12 +49,12 @@ const GithubProvider = ({ children }) => {
           const [repos, followers] = results;
           const status = "fulfilled";
 
-          if (followers.status === status) {
-            setFollowers(followers.value.data);
-          }
-
           if (repos.status === status) {
             setRepos(repos.value.data);
+          }
+
+          if (followers.status === status) {
+            setFollowers(followers.value.data);
           }
         })
         .catch((err) => console.log(err));

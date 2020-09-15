@@ -12,7 +12,7 @@ import FusionCharts from "fusioncharts";
 import Column2D from "fusioncharts/fusioncharts.charts";
 
 // Include the theme as fusion
-import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
+import FusionTheme from "fusioncharts/themes/fusioncharts.theme.candy";
 
 // Adding the chart and theme as dependency to the core fusioncharts
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
@@ -23,18 +23,34 @@ ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 
 const ChartComponent = ({ data }) => {
   const chartConfigs = {
-    type: "bar3d", // The chart type
+    type: "doughnut2d", // The chart type
     width: "100%", // Width of the chart
-    height: "400", // Height of the chart
+    height: "350", // Height of the chart
     dataFormat: "json", // Data type
     dataSource: {
       // Chart Configuration
       chart: {
-        caption: "Most Forked",
-        yAxisName: "Forkss",
-        xAxisName: "Repository",
-        xAxisNameFontSize: "16px",
-        yAxisNameFontSize: "16px",
+        caption: "Stars Per Language",
+        theme: "candy",
+        decimals: 0,
+        doughnutRadius: "45%",
+        showPercentValues: 0,
+        captionFontColor: "#102a42",
+        captionFontBold: 0,
+        captionFontSize: 20,
+        captionFont: "Roboto",
+        baseFont: "Open Sans",
+        baseFontSize: 16,
+        baseFontColor: "#617d98",
+        smartLineColor: "#617d98",
+        showShadow: 0,
+        showPlotBorder: 0,
+        paletteColors:
+          "#2caeba, #5D62B5, #FFC533, #F2726F, #8d6e63, #1de9b6, #6E80CA",
+        use3DLighting: 0,
+        useDataPlotColorForLabels: 0,
+
+        showBorder: 0,
       },
       // Chart Data
       data,

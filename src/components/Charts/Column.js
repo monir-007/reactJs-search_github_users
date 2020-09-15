@@ -12,7 +12,7 @@ import FusionCharts from "fusioncharts";
 import Column2D from "fusioncharts/fusioncharts.charts";
 
 // Include the theme as fusion
-import FusionTheme from "fusioncharts/themes/fusioncharts.theme.candy";
+import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
 
 // Adding the chart and theme as dependency to the core fusioncharts
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
@@ -23,18 +23,35 @@ ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 
 const ChartComponent = ({ data }) => {
   const chartConfigs = {
-    type: "doughnut2d", // The chart type
+    type: "column3d", // The chart type
     width: "100%", // Width of the chart
     height: "400", // Height of the chart
     dataFormat: "json", // Data type
     dataSource: {
       // Chart Configuration
       chart: {
-        caption: "Stars Per Language",
-        theme: "candy",
-        decimals: 0,
-        doughnutRadius: "45%",
-        showPercentValues: 0,
+        caption: "Most Popular",
+        yAxisName: "Stars",
+        xAxisName: "Repository",
+        xAxisNameFontSize: "16px",
+        yAxisNameFontSize: "16px",
+        showCanvasBorder: 0,
+        showAlternateVGridColor: 0,
+        usePlotGradientColor: 0,
+        valueFontSize: 16,
+        placeValuesInside: 0,
+        divLineColor: "#102a42",
+        divLineAlpha: 15,
+        captionFontColor: "#102a42",
+        captionFontBold: 0,
+        captionFontSize: 20,
+        captionFont: "Roboto",
+        baseFont: "Open Sans",
+        baseFontSize: 12,
+        baseFontColor: "#617d98",
+        smartLineColor: "#617d98",
+        showShadow: 0,
+        showPlotBorder: 0,
       },
       // Chart Data
       data,
