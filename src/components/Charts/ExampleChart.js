@@ -23,7 +23,7 @@ ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 
 const ChartComponent = ({ data }) => {
   const chartConfigs = {
-    type: "column2d", // The chart type
+    type: "area2d", // The chart type
     width: "500", // Width of the chart
     height: "400", // Height of the chart
     dataFormat: "json", // Data type
