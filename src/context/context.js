@@ -23,6 +23,48 @@ const GithubProvider = ({ children }) => {
 
   const [error, setError] = useState({ show: false, msg: "" });
 
+  //search Users
+  const searchUser = async (user) => {
+    toggleError();
+    setLoading(true);
+    const response = await axios(`${rootUrl}/users/${user}`).catch((err) =>
+      console.log(err)
+    );
+
+    if (response) {
+      setGithubUser(response.data);
+      const { login, followers_url } = response.data;
+
+      //repository
+      //https://api.github.com/users/monir-007/repos?per_page=100
+
+      //followers
+      //https://api.github.com/users/monir-007/followers
+
+      await Promise.allSettled([
+        axios(`${rootUrl}/users/${login}/repos?per_page=100`),
+        axios(`${followers_url}?per_page=100`),
+      ])
+        .then((results) => {
+          const [repos, followers] = results;
+          const status = "fulfilled";
+
+          if (followers.status === status) {
+            setFollowers(followers.value.data);
+          }
+
+          if (repos.status === status) {
+            setRepos(repos.value.data);
+          }
+        })
+        .catch((err) => console.log(err));
+    } else {
+      toggleError(true, "No username matches");
+    }
+    checkRequests();
+    setLoading(false);
+  };
+
   //check rate
   const checkRequests = () => {
     axios(`${rootUrl}/rate_limit`)
@@ -49,7 +91,15 @@ const GithubProvider = ({ children }) => {
 
   return (
     <GithubContext.Provider
-      value={{ githubUser, repos, followers, requests, error }}
+      value={{
+        githubUser,
+        repos,
+        followers,
+        requests,
+        error,
+        searchUser,
+        loading,
+      }}
     >
       {children}
     </GithubContext.Provider>
