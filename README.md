@@ -1,7 +1,14 @@
 ## Demo Version
 
 [Project Demo](https://search-github-users-demo.netlify.app/)
+
+-
 -Login with Google or Twitter
+-
+-
+-
+-
+-
 
 ## NPM Dependencies
 
