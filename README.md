@@ -2,7 +2,16 @@
 
 [Project Demo](https://search-github-users-demo.netlify.app/)
 
+<<<<<<< HEAD
+=======
+-
+>>>>>>> f5f3fc391b71f976302d54ecd8499a77b51b034c
 -Login with Google or Twitter
+-
+-
+-
+-
+-
 
 ## NPM Dependencies
 
