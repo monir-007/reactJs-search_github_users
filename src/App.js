@@ -7,9 +7,9 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/" exact={true}>
+        <PrivateRoute path="/" exact={true}>
           <Dashboard></Dashboard>
-        </Route>
+        </PrivateRoute>
         <Route path="/login">
           <Login />
         </Route>
