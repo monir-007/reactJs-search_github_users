@@ -35,7 +35,7 @@ const ChartComponent = ({ data }) => {
         decimals: 0,
         doughnutRadius: "45%",
         showPercentValues: 0,
-        captionFontColor: "#102a42",
+        captionFontColor: "#fff",
         captionFontBold: 0,
         captionFontSize: 20,
         captionFont: "Roboto",
