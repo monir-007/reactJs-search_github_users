@@ -4,10 +4,11 @@
 
 ## Some Out Look
 
-<p align="center">
-
+<div align="center">
+* Screenshot: 1
+  
 ![Screenshot: 1](https://github.com/monir-007/online-images/blob/master/images/github-users-1.jpg)
 
-</p>
+</div>
 
 ### Installation Steps
