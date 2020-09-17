@@ -61,7 +61,7 @@ const Wrapper = styled.nav`
   }
   button {
     background: transparent;
-    border: transparent;
+    border: 1px solid #7c9873;
     font-size: 1.2rem;
     text-transform: capitalize;
     letter-spacing: var(--spacing);
