@@ -25,7 +25,7 @@ const Navbar = () => {
       )}
       {/* Logout */}
       {isUser ? (
-        <button type="btn"
+        <button 
           onClick={() => {
             logout({ returnTo: window.location.origin });
           }}
@@ -33,7 +33,7 @@ const Navbar = () => {
           logOut
         </button>
       ) : (
-        <button type="btn" onClick={loginWithRedirect}>login</button>
+        <button onClick={loginWithRedirect}>login</button>
       )}
     </Wrapper>
   );
@@ -60,8 +60,8 @@ const Wrapper = styled.nav`
     object-fit: cover;
   }
   button {
-    background: transparent;
-    border: transparent;
+    background: 	#688f8f;
+    border: 1px solid #a8b2b5;
     font-size: 1.2rem;
     text-transform: capitalize;
     letter-spacing: var(--spacing);
