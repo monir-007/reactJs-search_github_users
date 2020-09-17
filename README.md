@@ -17,3 +17,12 @@
 </div>
 
 ### Installation Steps
+
+- Create Directory in Local Machine
+- Copy the path of Repository 
+- Download the Files
+- [Install NPM dependencies](https://reactjs.org/docs/create-a-new-react-app.html)
+- [Install Fusion Charts](https://reactjs.org/docs/create-a-new-react-app.html)
+- [Auth0]
+
+### that's it thank you.
