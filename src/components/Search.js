@@ -72,7 +72,7 @@ const Wrapper = styled.div`
       padding: 0.25rem 0.5rem;
     }
     input::placeholder {
-      color: #bbbbbb;
+      color: #777777;
       text-transform: capitalize;
       letter-spacing: var(--spacing);
     }
