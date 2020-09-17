@@ -87,7 +87,7 @@ const Wrapper = styled.div`
       transition: var(--transition);
       cursor: pointer;
       &:hover {
-        background: var(--clr-primary-8);
+        background: #aedbd3;
         color: var(--clr-primary-1);
       }
     }
