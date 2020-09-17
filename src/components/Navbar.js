@@ -25,15 +25,15 @@ const Navbar = () => {
       )}
       {/* Logout */}
       {isUser ? (
-        <button 
+        <button className="btn" 
           onClick={() => {
             logout({ returnTo: window.location.origin });
           }}
         >
-          logOut
+          logout
         </button>
       ) : (
-        <button onClick={loginWithRedirect}>login</button>
+        <button className="btn" onClick={loginWithRedirect}>login</button>
       )}
     </Wrapper>
   );
@@ -60,8 +60,8 @@ const Wrapper = styled.nav`
     object-fit: cover;
   }
   button {
-    background: 	#688f8f;
-    border: 1px solid #a8b2b5;
+    background: transparent;
+    border: transparent;
     font-size: 1.2rem;
     text-transform: capitalize;
     letter-spacing: var(--spacing);
