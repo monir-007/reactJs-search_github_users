@@ -25,7 +25,7 @@ const Navbar = () => {
       )}
       {/* Logout */}
       {isUser ? (
-        <button
+        <button type="btn"
           onClick={() => {
             logout({ returnTo: window.location.origin });
           }}
@@ -33,7 +33,7 @@ const Navbar = () => {
           logOut
         </button>
       ) : (
-        <button onClick={loginWithRedirect}>login</button>
+        <button type="btn" onClick={loginWithRedirect}>login</button>
       )}
     </Wrapper>
   );
