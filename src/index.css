@@ -151,7 +151,7 @@ p {
   border-radius: var(--radius);
 }
 .btn:hover {
-  background: var(--clr-primary-8);
+  background: #aedbd3;
   color: var(--clr-primary-1);
 }
 
