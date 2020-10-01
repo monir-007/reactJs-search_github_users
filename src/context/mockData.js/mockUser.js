@@ -7,8 +7,7 @@ export default {
   url: "https://api.github.com/users/monir-007",
   html_url: "https://github.com/monir-007",
   followers_url: "https://api.github.com/users/monir-007/followers",
-  following_url:
-    "https://api.github.com/users/monir-007/following{/other_user}",
+  following_url: "https://api.github.com/users/monir-007/following{/other_user}",
   gists_url: "https://api.github.com/users/monir-007/gists{/gist_id}",
   starred_url: "https://api.github.com/users/monir-007/starred{/owner}{/repo}",
   subscriptions_url: "https://api.github.com/users/monir-007/subscriptions",
@@ -26,10 +25,10 @@ export default {
   hireable: null,
   bio: "Become a Software Developer",
   twitter_username: "monir_wahid",
-  public_repos: 11,
+  public_repos: 21,
   public_gists: 0,
   followers: 1,
   following: 4,
   created_at: "2019-02-05T17:06:38Z",
-  updated_at: "2020-09-14T18:39:57Z",
-};
+  updated_at: "2020-10-01T17:18:56Z"
+}
